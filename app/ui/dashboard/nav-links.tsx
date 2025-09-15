@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import {
   UserGroupIcon,
@@ -21,7 +21,7 @@ const links = [
   { name: 'Customers', href: '/dashboard/customers', icon: UserGroupIcon },
 ];
 
-export default function NavLinks({open}: {open: boolean}) {
+export default function NavLinks({ open, childs }: { open: boolean, childs?: React.ReactNode }) {
   const pathname = usePathname();
   return (
     <>
