@@ -10,7 +10,7 @@ export default async function Page(props: { params: Promise<{ id: string }> }) {
     fetchCustomers(),
   ]);
   return (
-    <main>
+    <main className='w-full'>
       <Breadcrumbs
         breadcrumbs={[
           { label: 'Invoices', href: '/dashboard/invoices' },

@@ -18,7 +18,7 @@ export default async function Page(props: {
   const customers = await fetchFilteredCustomers(query);
 
   return (
-    <main>
+    <main className='w-full'>
       <CustomersTable customers={customers} />
     </main>
   );
